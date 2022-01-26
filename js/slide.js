@@ -1,5 +1,5 @@
 // ----------------section1------------------
-$(function(){  
+$(function () {
 
   $(".left").click(function () {
     $(".sec1_slide li:last").prependTo(".sec1_slide");
@@ -10,14 +10,14 @@ $(function(){
   $(".right").click(function () {
     $(".sec1_slide").stop().animate({ marginLeft: -368 }, 300, function () {
       $(".sec1_slide li:first").appendTo(".sec1_slide");
-      $(".sec1_slide").css({ marginLeft: 0 });  
+      $(".sec1_slide").css({ marginLeft: 0 });
     });
   });
 
-  function slide(){
+  function slide() {
     $(".sec1_slide").stop().animate({ marginLeft: -368 }, 300, function () {
       $(".sec1_slide li:first").appendTo(".sec1_slide");
-      $(".sec1_slide").css({ marginLeft: 0 });  
+      $(".sec1_slide").css({ marginLeft: 0 });
     });
   }
 
@@ -25,66 +25,87 @@ $(function(){
 });
 
 // ----------------section3------------------
-$(function() {
+$(function () {
   $(".sec3_box_1").fadeIn();
-    $('.sec3_nav>li:nth-of-type(1)').click(function() {               
-      $('li').removeClass("active");
-        $(this).addClass("active");
-        $(".sec3_box_1").show();
-        $(".sec3_box_2").css("display","none");
-        $(".sec3_box_3").css("display","none");
-        $(".sec3_box_4").css("display","none");
-        $(".sec3_box_5").css("display","none");
-        $(".sec3_box_6").css("display","none");
-    });
-    $('.sec3_nav>li:nth-of-type(2)').click(function() {
-      $('li').removeClass("active");
-        $(this).addClass("active");
-        $(".sec3_box_1").css("display","none");
-        $(".sec3_box_2").css("display","flex");
-        $(".sec3_box_3").css("display","none");
-        $(".sec3_box_4").css("display","none");
-        $(".sec3_box_5").css("display","none");
-        $(".sec3_box_6").css("display","none");
-    });
-    $('.sec3_nav>li:nth-of-type(3)').click(function() {
-      $('li').removeClass("active");
-        $(this).addClass("active");
-        $(".sec3_box_1").css("display","none");
-        $(".sec3_box_2").css("display","none");
-        $(".sec3_box_3").css("display","flex");
-        $(".sec3_box_4").css("display","none");
-        $(".sec3_box_5").css("display","none");
-        $(".sec3_box_6").css("display","none");
-    });
-    $('.sec3_nav>li:nth-of-type(4)').click(function() {
-      $('li').removeClass("active");
-        $(this).addClass("active");
-        $(".sec3_box_1").css("display","none");
-        $(".sec3_box_2").css("display","none");
-        $(".sec3_box_3").css("display","none");
-        $(".sec3_box_4").css("display","flex");
-        $(".sec3_box_5").css("display","none");
-        $(".sec3_box_6").css("display","none");
-    });
-    $('.sec3_nav>li:nth-of-type(5)').click(function() {
-      $('li').removeClass("active");
-        $(this).addClass("active");
-        $(".sec3_box_1").css("display","none");
-        $(".sec3_box_2").css("display","none");
-        $(".sec3_box_3").css("display","none");
-        $(".sec3_box_4").css("display","none");
-        $(".sec3_box_5").css("display","flex");
-        $(".sec3_box_6").css("display","none");
-    });
-    $('.sec3_nav>li:nth-of-type(6)').click(function() {
-      $('li').removeClass("active");
-        $(this).addClass("active");
-        $(".sec3_box_1").css("display","none");
-        $(".sec3_box_2").css("display","none");
-        $(".sec3_box_3").css("display","none");
-        $(".sec3_box_4").css("display","none");
-        $(".sec3_box_5").css("display","none");
-        $(".sec3_box_6").css("display","flex");
-    });
+  $('.sec3_nav>li:nth-of-type(1)').click(function () {
+    $('li').removeClass("active");
+    $(this).addClass("active");
+    $(".sec3_box_1").show();
+    $(".sec3_box_2").css("display", "none");
+    $(".sec3_box_3").css("display", "none");
+    $(".sec3_box_4").css("display", "none");
+    $(".sec3_box_5").css("display", "none");
+    $(".sec3_box_6").css("display", "none");
+  });
+  $('.sec3_nav>li:nth-of-type(2)').click(function () {
+    $('li').removeClass("active");
+    $(this).addClass("active");
+    $(".sec3_box_1").css("display", "none");
+    $(".sec3_box_2").css("display", "flex");
+    $(".sec3_box_3").css("display", "none");
+    $(".sec3_box_4").css("display", "none");
+    $(".sec3_box_5").css("display", "none");
+    $(".sec3_box_6").css("display", "none");
+  });
+  $('.sec3_nav>li:nth-of-type(3)').click(function () {
+    $('li').removeClass("active");
+    $(this).addClass("active");
+    $(".sec3_box_1").css("display", "none");
+    $(".sec3_box_2").css("display", "none");
+    $(".sec3_box_3").css("display", "flex");
+    $(".sec3_box_4").css("display", "none");
+    $(".sec3_box_5").css("display", "none");
+    $(".sec3_box_6").css("display", "none");
+  });
+  $('.sec3_nav>li:nth-of-type(4)').click(function () {
+    $('li').removeClass("active");
+    $(this).addClass("active");
+    $(".sec3_box_1").css("display", "none");
+    $(".sec3_box_2").css("display", "none");
+    $(".sec3_box_3").css("display", "none");
+    $(".sec3_box_4").css("display", "flex");
+    $(".sec3_box_5").css("display", "none");
+    $(".sec3_box_6").css("display", "none");
+  });
+  $('.sec3_nav>li:nth-of-type(5)').click(function () {
+    $('li').removeClass("active");
+    $(this).addClass("active");
+    $(".sec3_box_1").css("display", "none");
+    $(".sec3_box_2").css("display", "none");
+    $(".sec3_box_3").css("display", "none");
+    $(".sec3_box_4").css("display", "none");
+    $(".sec3_box_5").css("display", "flex");
+    $(".sec3_box_6").css("display", "none");
+  });
+  $('.sec3_nav>li:nth-of-type(6)').click(function () {
+    $('li').removeClass("active");
+    $(this).addClass("active");
+    $(".sec3_box_1").css("display", "none");
+    $(".sec3_box_2").css("display", "none");
+    $(".sec3_box_3").css("display", "none");
+    $(".sec3_box_4").css("display", "none");
+    $(".sec3_box_5").css("display", "none");
+    $(".sec3_box_6").css("display", "flex");
+  });
+});
+
+// ----------------section4------------------
+$(function () {
+  var index = 0;
+  window.onload = function () {
+    slideShow();
+  }
+  function slideShow() {
+    var i;
+    var x = document.getElementsByClassName("sec4_slide");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    index++;
+    if (index > x.length) {
+      index = 1;
+    }
+    x[index - 1].style.display = "block";
+    setTimeout(slideShow, 3000);
+  }
 });
