@@ -10,3 +10,10 @@ $.ajax({
         $(".sec1_box_1>.box1").children(".box1_text").append("<p>" + msg.documents[0].authors + "</p>");
         $(".sec1_box_1>.box1").children(".box1_text").append("<p>" + msg.documents[0].publisher + "</p>");
     });
+
+    $(function(){
+        $.get("./sub_txt/txt1.txt", function (data){
+            $(".info_box1").html(data);
+        })
+    });
+
