@@ -8,6 +8,8 @@
     width:100%;
     height:2100px;
 }
+.sec2_box_2 {display:none;}
+.sec2_box_3 {display:none;}
 /* ------------------------------------------------------------ */
 
 .sec1_box_1{
@@ -16,7 +18,6 @@
     margin:40px auto 0 ;
     width:1048px;
     height:240px;
-    /* background-color: rgb(253, 249, 241); */
 }
 .sec1_box_1 img {
     border-radius:20px;
@@ -109,7 +110,7 @@
     border-radius:10px;
     color:#fff;
     text-align:center;
-    transition:all 1s;
+    transition:all 0.5s;
     cursor: pointer;
 }
 .sec1_purchase p span {
@@ -120,13 +121,13 @@
     background-color:#fc6b05;
 }
 /* ------------------------------------------------------------ */
-#sec2 nav {
+.sec2_nav {
     margin:0 auto;
     width:1048px;
     height:40px;
     border-bottom:1px solid rgb(228, 228, 228);
 }
-#sec2 nav ul li {
+.sec2_nav ul li {
     padding:9px 20px;
     float:left;
     font-size:18px;
@@ -137,18 +138,18 @@
     color:#000;
     border-bottom:1px solid rgb(0, 0, 0);
 }
-.sec2_box {
+.sec2_box_1 {
     margin:0 auto;
     width:1048px;
 }
-.sec2_box .banner1 {
+.sec2_box_1 .banner1 {
     margin:20px 0;
     width:100%;
     height:74px;
     background-color:rgb(255, 123, 17);
     border-radius:20px;
 }
-.sec2_box .banner1 img{
+.sec2_box_1 .banner1 img{
     display:block;
     margin:0 auto;
     height:80px;
@@ -198,5 +199,146 @@ div[class*="info_box"]>p{
 .info_btn button:hover {
     background-color:#fff;
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 5%);
+}
 
+/* ------------댓글창-------------- */
+.sec2_box_2 {
+    margin:40px auto 0;
+    width: 1048px;
+}
+.comment_input {
+    position: relative;
+    margin:0 auto;
+    width:1000px;
+}
+.comment_input>input{
+    margin-bottom:20px;
+    padding:10px;
+    width:100%;
+    height:70px;
+    border-radius:20px;
+    border:none;
+    background-color:rgba(239, 239, 240, 0.411);
+    font-size:17px;
+}
+.comment_a {
+    position:absolute;
+    top:15px;
+    right:20px;
+    padding:10px 20px;
+    background-color:#fff;
+    border-radius:10px;
+    color:#fc6b05;
+    cursor: pointer;
+    transition:all 1s;
+}
+.comment_a:hover {
+    background-color:#fc6b05;
+    color:#fff
+}
+.sec2_box_2>nav {
+    display:inline-block;
+    width:1048px;
+}
+.sec2_box_2>nav ul{
+    float:right;
+}
+.sec2_box_2>nav ul li {
+    float:left;
+    margin-left:15px;
+}
+.sec2_box_2>nav ul li {
+    color:#777;
+}
+.comment_box {
+    padding:30px 10px;
+    width:100%;
+    border-bottom:1px solid rgb(228, 228, 228);
+}
+.comment_box>p:nth-of-type(1){
+    line-height:45px;
+}
+.comment_box>p:nth-of-type(1)>span{
+    margin-right:10px;
+    padding:2px 5px;
+    border:1px solid rgb(219, 219, 219);
+    border-radius:5px;
+    font-size:14px;
+}
+.comment_box>p:nth-of-type(2){
+    line-height:25px;
+    margin-bottom:10px;
+}
+.comment_box>p:nth-of-type(2)>span{
+    margin-right:5px;
+    padding:2px 5px;
+    border:1px solid #fc6c058a;
+    border-radius:5px;
+    font-size:14px;
+    color:#fc6b05;
+}
+.comment_bottom {
+    position:relative;
+    width:100%;
+}
+.comment_bt {
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+.comment_bt>button{
+    padding:5px 10px;
+    background-color:rgba(239, 239, 240, 0.411);
+    border-radius:20px;
+    border:none;
+    transition:all 0.5s;
+}
+.comment_bt>button:hover {
+    background-color:#fc6b05;
+    color:#fff
+}
+.sec2_box_2_buttom {
+    width:133px;
+    height:40px;
+    margin:30px auto 0;
+    padding:10px 20px;
+    background-color:rgba(211, 211, 211, 0.712);
+    border-radius:10px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 5%);
+    cursor: pointer;
+}
+/* -------------------추천------------------------ */
+.sec2_box_3 {
+    margin:0 auto;
+    width:1048px;
+}
+.sec2_box_3>h3 {
+    margin:80px 10px 20px;
+}
+.box {
+    display:inline-block;
+    margin-left:5px;
+    width:122px;
+    height:220px;
+    cursor: pointer;
+}
+.box>img {
+    width:110px;
+    border-radius:20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.274);   
+}
+.box h4 {
+    display:inline-block;
+    width:110px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.box p {
+    display:inline-block;
+    width:110px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color:#777;
 }
